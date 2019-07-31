@@ -1,0 +1,14 @@
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    padding: 50px 0;
+}
+.search-list{
+    flex-grow: 10;
+    border: #000 5px solid;
+    height: 50px;
+    margin: 20px 10px;
+    padding: 10px;
+}

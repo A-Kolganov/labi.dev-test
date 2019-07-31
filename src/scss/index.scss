@@ -1,25 +1,10 @@
 // HELPERS
 
-@import '../scss/helpers/reset.scss';
-@import '../scss/helpers/variables.scss';
-@import '../scss/helpers/alert.scss';
-
-// FONTS
-
-@import '../fonts/index.scss';
+@import './helpers/reset.scss';
+@import './helpers/variables.scss';
+@import './helpers/container.scss';
 
 // COMPONENTS
 
-@import '../scss/components/header/index.scss';
-@import '../scss/components/img-section/index.scss';
-@import '../scss/components/shop-section/index.scss';
-@import '../scss/components/nav-content/index.scss';
-@import '../scss/components/modal/index.scss';
-@import '../scss/components/item-view/index.scss';
-@import '../scss/components/footer/index.scss';
-@import '../scss/components/footer/index.scss';
-@import '../scss/components/about_us/index.scss';
-@import '../scss/components/guaranty/index.scss';
-@import '../scss/components/service/index.scss';
-@import '../scss/components/wgarden/index.scss';
-@import '../scss/components/contacts/index.scss';
+@import './components/main-content/index.scss';
+@import './components/side-bar/index.scss';
