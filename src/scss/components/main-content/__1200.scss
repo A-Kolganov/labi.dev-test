@@ -78,5 +78,20 @@
     padding: 5px;
 }
 .star{
-    background: url('../../img/star.svg');
+    background: url('./img/star.png');
+width: 100px;
+    height: 20px;
+    background-repeat: repeat-x;
+    background-size: contain;
+}
+.gold{
+    width: 0%;
+    height: 20px;
+    background-color: yellow;
+    background-position: left
+}
+.grey{
+    background-color: grey;
+    width: 100px;
+    height: 20px;
 }

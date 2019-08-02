@@ -93,4 +93,4 @@ import {displayItems} from './components/viewList';
 // showNavContent();
 
 displayItems();
-    
+
