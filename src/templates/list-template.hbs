@@ -1,46 +1,65 @@
-<ul class="search-list__list">
+
             <li class="search-list__list__item">
               <div class="search-item">
-                <h2 class="search-item__title">{{name}}
+                <h2 class="search-item__title"><a class="search-item__title__link" href="#">{{name}}</a>
                 </h2>
-                <div class="search-item__title__options-cover">
-                  <ul class="search-item__title__options-cover__list">
-                   <li class="search-item__title__options-cover__list__item">
-                     <span class="search-item__title__options-cover__list__item__title"> </span>
+                <div class="search-item__options-cover">
+                  <ul class="search-item__options-cover__list">
+                   <li class="search-item__options-cover__list__item">
+                     <span class="search-item__options-cover__list__item__title">fixed:</span>
+                     {{options.fixed}}
                    </li>
-                   <li class="search-item__title__options-cover__list__item">
-                      <span class="search-item__title__options-cover__list__item__title"> </span>
+                   <li class="search-item__options-cover__list__item">
+                     <span class="search-item__options-cover__list__item__title"> budget: </span>&#36
+                      {{options.budget}}
                    </li>
-                   <li class="search-item__title__options-cover__list__item">
-                      <span class="search-item__title__options-cover__list__item__title"> </span>
+                   <li class="search-item__options-cover__list__item">
+                      <span class="search-item__options-cover__list__item__title"> delivery: </span>
+                      {{options.delivery}}
                    </li>
-                   <li class="search-item__title__options-cover__list__item">
-                      <span class="search-item__title__options-cover__list__item__title"> </span>
+                   <li class="search-item__options-cover__list__item">
+                      <span class="search-item__options-cover__list__item__title"> posted: </span>
+                      {{options.posted}}
                    </li>
-                   <li class="search-item__title__options-cover__list__item">
-                      <span class="search-item__title__options-cover__list__item__title"> </span>
+                   <li class="search-item__options-cover__list__item">
+                      <span class="search-item__options-cover__list__item__title"> ends: </span>
+                      {{options.ends}}
                    </li>
-                   <li class="search-item__title__options-cover__list__item">
-                      <span class="search-item__title__options-cover__list__item__title"> </span>
+                   <li class="search-item__options-cover__list__item">
+                      <a href="#" class="search-item__options-cover__list__item__link">
+                      {{options.proposals}}
+                      proposals 
+                      </a>
                    </li>
                   </ul>
                 </div>
                 <p class="search-item__title__txt">
-
+                   {{description}}
                 </p>
-                <ul class="search-item__title__skill-list">
-                    <li class="search-item__title__skill-list__item">
-                        <span class="search-item__title__options-cover__list__item__title"> </span>
+                <ul class="search-item__skill-list">
+                    <li class="search-item__skill-list__item">
+                        <span class="search-item__options-cover__list__item__title">category: </span>
+                        {{category}}
                     </li>
-                    <li class="search-item__title__skill-list__item">
-                        <span class="search-item__title__options-cover__list__item__title"> </span>
+                    <li class="search-item__skill-list__item__show">
+                    <span class="search-item__options-cover__list__item__title">skills: </span>
+                       {{#each slils}} 
+                       <p class="search-item__skill-list__item__show__skill-name">
+                          {{this.name}}
+                       </p> 
+                       {{/each}}
                     </li>
-                    <li class="search-item__title__skill-list__item">
-                        <span class="search-item__title__options-cover__list__item__title"> </span>
-                    </li>
+                    
                 </ul>
-                <p class="search-item__title__location"></p>
-                <div class="search-item__title__ratings-cover"></div>
+                <p class="search-item__location"><span class="search-item__title__options-cover__list__item__title">client: </span>
+                {{client.country}}
+                </p>
+                <div>
+                  <div class="search-item__ratings-cover">{{client.rating}}</div>  
+                  <div class="star"> </div> 
+                </div>
+                
+                
               </div>
             </li>
           </ul>

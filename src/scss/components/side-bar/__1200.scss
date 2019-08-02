@@ -1,5 +1,6 @@
 .search-bar{
-    flex-grow: 1;
+    grid-column: 1 / 2;
+    grid-row: 1 / 1;
     height: auto;
     margin: 5px;
     padding: 0 15px;

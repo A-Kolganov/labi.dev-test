@@ -1,14 +1,82 @@
 .wrapper{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    flex-direction: row-reverse;
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    grid-template-rows: 1fr;
     padding: 50px 0;
 }
 .search-list{
-    flex-grow: 10;
-    border: #000 5px solid;
-    height: 50px;
+    grid-column: 2 / 3;
+    grid-row: 1 / 1;
+    height: auto;
     margin: 20px 10px;
+    padding: 5px;
+}
+.search-list__list__item{
+    border: $secondaryFontColor 1px solid;
     padding: 10px;
+    margin: 10px 0;
+    border-radius: 3px;
+}
+.search-item__title{
+    width: 100%;
+    padding: 5px;
+}
+.search-item__title__link{
+    color: $activeColor;
+    text-align: left;
+    font-family: $mainFont;
+    font-size: 20px;
+    text-decoration: none;
+
+}
+.search-item__options-cover__list,.search-item__skill-list{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+}
+.search-item__options-cover__list__item,.search-item__skill-list__item:first-child,.search-item__location{
+    padding: 5px 8px;
+    border-right: $secondaryFontColor 1px solid;
+}
+.search-item__options-cover__list__item:last-child{
+    border-right: none;
+}
+.search-item__options-cover__list__item__title,.search-item__title__options-cover__list__item__title{
+    color: $secondaryFontColor;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+.search-item__options-cover__list__item__link{
+    color: $activeColor;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.search-item__title__txt{
+    display: block;
+    width: 100%;
+    font-family: $mainFont;
+    font-size: 15px;
+    margin: 10px 0;
+    padding: 5px;
+}
+.search-item__skill-list__item__show{
+    margin: 0 5px;
+}
+.search-item__options-cover__list__item__title{
+
+}
+.search-item__skill-list__item__show__skill-name{
+    background-color:$bgGreyColor;
+    padding: 5px;
+    display: inline-block;
+}
+.search-item__ratings-cover,.search-item__location{
+    display: inline-block;
+}
+.search-item__ratings-cover{
+    padding: 5px;
+}
+.star{
+    background: url('../../img/star.svg');
 }
