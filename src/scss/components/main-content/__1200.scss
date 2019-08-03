@@ -60,12 +60,15 @@
     margin: 10px 0;
     padding: 5px;
 }
+.search-item__title__txt__btn{
+    text-decoration: none;
+    color: $activeColor;
+    cursor: pointer;
+}
 .search-item__skill-list__item__show{
     margin: 0 5px;
 }
-.search-item__options-cover__list__item__title{
 
-}
 .search-item__skill-list__item__show__skill-name{
     background-color:$bgGreyColor;
     padding: 5px;
@@ -74,24 +77,25 @@
 .search-item__ratings-cover,.search-item__location{
     display: inline-block;
 }
-.search-item__ratings-cover{
-    padding: 5px;
-}
-.star{
+.search-item__rating-cover__star{
     background: url('./img/star.png');
-width: 100px;
-    height: 20px;
+width: 80px;
+    height: 16px;
     background-repeat: repeat-x;
     background-size: contain;
 }
-.gold{
+.search-item__rating-cover__gold{
     width: 0%;
-    height: 20px;
-    background-color: yellow;
+    height: 16px;
+    background-color: #eeee77;
     background-position: left
 }
-.grey{
-    background-color: grey;
-    width: 100px;
-    height: 20px;
+.search-item__rating-cover__grey{
+    background-color: #777;
+    width: 78px;
+    height: 16px;
+    vertical-align: top;
+}
+.search-item__ratings-cover,.search-item__ratings-cover__txt,.search-item__rating-cover__grey{
+    display: inline-block;
 }
